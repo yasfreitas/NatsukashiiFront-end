@@ -1,0 +1,17 @@
+<section>
+    <img src="./image(6).png" alt="" class="lado">
+    <div class="blog-container">
+        <div *ngFor="let post of posts" class="card">
+            <div class="card-content">
+                <img [src]="post.imageUrl" alt="{{ post.nome }}" class="card-image">
+                <h3>{{ post.nome }}</h3>
+                <p>{{ post.descricao }}</p>
+                <div class="card-footer">
+                    <span>{{ post.preco | currency: 'BRL' }}</span>
+                </div>
+                <a href="#" class="comprar">COMPRAR</a>
+            </div>
+        </div>
+    </div>
+    <img src="./image(6).png" alt="" class="lado">
+</section>
